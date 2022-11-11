@@ -1,0 +1,39 @@
+.filter {
+  @include centeredFlex;
+}
+
+.filter__item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.filter__button {
+  padding: 6px 22px;
+
+  color: $primaryColor;
+  background-color: $bgdColorSection;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  border: 0;
+
+  transition: background-color 250ms $cubic, color 250ms $cubic, box-shadow 250ms $cubic;
+
+  &:first-child {
+    padding: 6px 25px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    color: $primaryWhiteColor;
+    box-shadow: 0px 2px 2px $boxshadow3, 0px 1px 2px $boxshadow4, 0px 3px 1px $boxshadow5;
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bgdColorAccent;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__box {
+  flex-grow: 1;
+}
+
+/* footer logo */
+.footer__logo {
+  color: $primaryWhiteColor;
+}
+
+/* footer socials */
+
+.footer__socials {
+  margin-top: 20px;
+}

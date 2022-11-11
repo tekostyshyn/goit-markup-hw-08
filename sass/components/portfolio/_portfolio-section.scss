@@ -1,0 +1,79 @@
+.portfolio__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+  background-color: $primaryWhiteColor;
+}
+
+.card__link {
+  transition: box-shadow 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    display: block;
+    box-shadow: 1px 4px 6px $boxshadow6, 0px 4px 4px $boxshadow7, 0px 1px 1px $boxshadow3;
+  }
+}
+
+.card__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__popup {
+  @include centeredFlex;
+
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  background-color: $accentColorTransp;
+  color: $primaryWhiteColor;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  transition: transform 250ms $cubic;
+
+  .card__link:hover &,
+  .card__link:focus & {
+    transform: translateY(-100%);
+  }
+}
+
+.card__thumb {
+  padding: 20px 24px;
+  border-left: solid 1px $cardBorderColor;
+  border-right: solid 1px $cardBorderColor;
+  border-bottom: solid 1px $cardBorderColor;
+}
+
+.card__subtitle {
+  color: $primaryColor;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card__description {
+  margin-top: 4px;
+
+  color: $secondaryColor;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
