@@ -21,16 +21,15 @@
         </a>
 
         <!-- site navigation -->
-        <nav class="menu">
+        <nav class="header__nav">
           <button
             type="button"
-            class="menu__button js-open-menu"
+            class="header__burger-menu js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="menu-icon" aria-label="Перемикач мобільного меню">
-              <use href="./images/icons.svg#icon-menu" class="menu-icon__open"></use>
-              <use href="./images/icons.svg#icon-close" class="menu-icon__close"></use>
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
           <ul class="site-nav">
@@ -76,71 +75,6 @@
           <button class="button hero__button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-
-      <!-- modal -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal__button" data-modal-close>
-            <svg width="11" height="11">
-              <use href="./images/icons.svg#icon-cross"></use>
-            </svg>
-          </button>
-          <div class="callback-box">
-            <p class="callback-box__caption">Залиште свої дані, ми вам передзвонимо</p>
-            <form class="callback-form">
-              <label for="user-name" class="callback-form__label">Ім'я</label>
-              <div class="callback-form__wrapper">
-                <input type="text" id="user-name" name="user-name" class="callback-form__input" />
-                <svg class="callback-form__icon">
-                  <use href="./images/icons.svg#icon-name"></use>
-                </svg>
-              </div>
-              <label for="user-tel" class="callback-form__label">Телефон</label>
-              <div class="callback-form__wrapper">
-                <input type="tel" id="user-tel" name="user-tel" class="callback-form__input" />
-                <svg class="callback-form__icon">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-              <label for="user-email" class="callback-form__label">Пошта</label>
-              <div class="callback-form__wrapper">
-                <input
-                  type="email"
-                  id="user-email"
-                  name="user-email"
-                  class="callback-form__input"
-                />
-                <svg class="callback-form__icon">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
-              <label for="user-comment" class="callback-form__label">Коментар</label>
-              <textarea
-                name="user-comment"
-                id="user-comment"
-                class="callback-form__comment"
-                placeholder="Введіть текст"
-              ></textarea>
-              <div class="terms">
-                <label for="contract-terms" class="terms__label">
-                  <input
-                    type="checkbox"
-                    name="contract-terms"
-                    id="contract-terms"
-                    class="terms__checkbox visually-hidden"
-                  />
-                  <svg class="terms__icon">
-                    <use href="./images/icons.svg#icon-check"></use>
-                  </svg>
-                  Погоджуюся з розсилкою та приймаю
-                  <a href="#" class="terms__link">Умови договору</a></label
-                >
-              </div>
-              <button type="submit" class="callback-form__button button">Відправити</button>
-            </form>
-          </div>
-        </div>
-      </div>
 
       <!-- features -->
       <section class="section">
@@ -402,6 +336,7 @@
       </section>
     </main>
 
+    <!-- clients -->
     <section class="section">
       <div class="container">
         <h2 class="section__title">Постійні клієнти</h2>
@@ -536,6 +471,91 @@
         </div>
       </div>
     </footer>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="container mobile-menu__container">
+        <button type="button" class="mobile-menu__close-button js-close-menu">
+          <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul>
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="callback-box">
+          <p class="callback-box__caption">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="callback-form">
+            <label for="user-name" class="callback-form__label">Ім'я</label>
+            <div class="callback-form__wrapper">
+              <input type="text" id="user-name" name="user-name" class="callback-form__input" />
+              <svg class="callback-form__icon">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+            <label for="user-tel" class="callback-form__label">Телефон</label>
+            <div class="callback-form__wrapper">
+              <input type="tel" id="user-tel" name="user-tel" class="callback-form__input" />
+              <svg class="callback-form__icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label for="user-email" class="callback-form__label">Пошта</label>
+            <div class="callback-form__wrapper">
+              <input type="email" id="user-email" name="user-email" class="callback-form__input" />
+              <svg class="callback-form__icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label for="user-comment" class="callback-form__label">Коментар</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="callback-form__comment"
+              placeholder="Введіть текст"
+            ></textarea>
+            <div class="terms">
+              <label for="contract-terms" class="terms__label">
+                <input
+                  type="checkbox"
+                  name="contract-terms"
+                  id="contract-terms"
+                  class="terms__checkbox visually-hidden"
+                />
+                <svg class="terms__icon">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                Погоджуюся з розсилкою та приймаю
+                <a href="#" class="terms__link">Умови договору</a></label
+              >
+            </div>
+            <button type="submit" class="callback-form__button button">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
