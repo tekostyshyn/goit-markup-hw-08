@@ -191,7 +191,7 @@
           <ul class="works">
             <li class="works__item">
               <a href="#">
-                <img src="./images/section3-1.jpeg" alt="Робота за комп'ютером" width="370" />
+                <img src="./images/section3-1.jpeg" alt="Робота за комп'ютером" width="370px" />
                 <div class="works__box">
                   <p class="works__title">Десктопні додатки</p>
                 </div>
@@ -202,7 +202,7 @@
                 <img
                   src="./images/section3-2.jpeg"
                   alt="Жінка за комп'ютером із телефоном в руці"
-                  width="370"
+                  width="370px"
                 />
                 <div class="works__box">
                   <p class="works__title">Мобільні додатки</p>
@@ -211,7 +211,7 @@
             </li>
             <li class="works__item">
               <a href="#">
-                <img src="./images/section3-3.jpeg" alt="Робота на планшеті" width="370" />
+                <img src="./images/section3-3.jpeg" alt="Робота на планшеті" width="370px" />
                 <div class="works__box">
                   <p class="works__title">Дизайнерські рішення</p>
                 </div>
@@ -227,11 +227,10 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                src="./images/team-1.jpeg"
-                alt="Чоловік в окулярах, який посміхається"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/team-1.jpeg" media="(min-width: 768px)" />
+                <img src="./images/team-1-mob.jpeg" alt="Чоловік в окулярах, який посміхається" />
+              </picture>
               <div class="team__container">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__description">Product Designer</p>
@@ -268,11 +267,10 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team-2.jpeg"
-                alt="Жінка в окулярах, яка посміхається"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/team-2.jpeg" media="(min-width: 768px)" />
+                <img src="./images/team-2-mob.jpeg" alt="Жінка в окулярах, яка посміхається" />
+              </picture>
               <div class="team__container">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__description">Frontend Developer</p>
@@ -309,7 +307,10 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team-3.jpeg" alt="Чоловік, який посміхається" width="270" />
+              <picture>
+                <source srcset="./images/team-3.jpeg" media="(min-width: 768px)" />
+                <img src="./images/team-3-mob.jpeg" alt="Чоловік, який посміхається" />
+              </picture>
               <div class="team__container">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__description">Marketing</p>
@@ -346,11 +347,10 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team-4.jpeg"
-                alt="Чоловік в окулярах, який підморгує"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/team-4.jpeg" media="(min-width: 768px)" />
+                <img src="./images/team-4-mob.jpeg" alt="Чоловік в окулярах, який підморгує" />
+              </picture>
               <div class="team__container">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__description">UI Designer</p>

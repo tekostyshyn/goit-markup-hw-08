@@ -1,6 +1,8 @@
 .works {
-  display: flex;
-  margin-top: 50px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .works__item {
