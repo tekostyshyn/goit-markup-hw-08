@@ -1,5 +1,6 @@
 .subscribe-box {
   text-align: center;
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
     text-align: left;
@@ -29,10 +30,11 @@
 }
 
 .subscribe__input {
-  display: block;
+  display: inline-block;
   padding: 15px 16px;
   height: 100%;
   width: 100%;
+
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid $subscribeBorderColor;
@@ -44,8 +46,11 @@
   box-shadow: 0px 4px 4px $boxShadowMain;
   outline: 0;
 
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 1200px) {
-    display: inline-block;
     width: 358px;
   }
 }

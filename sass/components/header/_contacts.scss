@@ -1,7 +1,16 @@
 .contacts {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
   }
@@ -9,11 +18,42 @@
 
 .contacts__icon {
   fill: currentColor;
-  margin-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+.contacts__icon--envelope {
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__icon--mobile {
+  width: 10px;
+  height: 14px;
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .contacts__item {
   margin-right: 50px;
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-right: 0;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -22,17 +62,20 @@
 
 .contacts__link {
   @include centeredFlex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   color: $secondaryColor;
 
+  font-size: 12px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 
   transition: color 250ms $cubic;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
 
   &:hover,
   &:focus {

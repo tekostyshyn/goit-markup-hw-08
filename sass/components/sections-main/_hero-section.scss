@@ -10,6 +10,11 @@
   margin-right: auto;
   padding: 118px 0px;
 
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient($gradientHero, $gradientHero),
+      url(../images/hero-bgd-tab.jpeg);
+  }
+
   @media screen and (min-width: 1200px) {
     padding: 200px 0px;
     background-image: linear-gradient($gradientHero, $gradientHero), url(../images/hero-bgd.jpeg);
@@ -38,7 +43,7 @@
 
 .hero__button {
   margin-top: 30px;
-  padding: 10px 26px;
+  padding: 10px 24px;
 
   @media screen and (min-width: 1200px) {
     padding: 10px 32px;
