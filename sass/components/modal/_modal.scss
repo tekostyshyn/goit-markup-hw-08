@@ -15,7 +15,13 @@
 
   overflow-y: scroll;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
+    padding-left: 159px;
+    padding-right: 159px;
+    padding-top: 208px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding: 0;
   }
 }
@@ -32,18 +38,20 @@
   box-shadow: 0px 2px 1px $boxshadow1, 0px 1px 1px $boxshadow2, 0px 1px 3px $boxshadow3;
   border-radius: 4px;
   transform: scale(1);
-  transition: transform 250ms $cubic;
+  transition: transform 250ms $cubic, scale 250ms $cubic;
 
   @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
-    height: 609px;
-  }
-
-  @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -51,7 +59,7 @@
   .backdrop.is-hidden & {
     transform: scale(1.2);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 1200px) {
       transform: translate(-50%, -50%);
     }
   }
