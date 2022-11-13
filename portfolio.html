@@ -21,7 +21,17 @@
         </a>
 
         <!-- site navigation -->
-        <nav>
+        <nav class="header__nav">
+          <button
+            type="button"
+            class="header__burger-menu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студія</a>
@@ -41,7 +51,7 @@
         <ul class="contacts">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="contacts__icon contacts__icon--envelope">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -49,7 +59,7 @@
           </li>
           <li class="contacts__item">
             <a href="tel:+380961111111" class="contacts__link">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__icon contacts__icon--mobile">
                 <use href="./images/icons.svg#icon-mobile"></use>
               </svg>
               +38 096 111 11 11</a
@@ -86,7 +96,14 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img src="./images/gallery-1.jpeg" alt="Ноутбук з графікою" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-1.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img src="./images/gallery-1-mob.jpeg" alt="Ноутбук з графікою" width="450" />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -104,11 +121,18 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img
-                    src="./images/gallery-2.jpeg"
-                    alt="Двоэ чоловіків грають у баскетбол"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-2.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img
+                      src="./images/gallery-2-mob.jpeg"
+                      alt="Двоє чоловіків грають у баскетбол"
+                      width="450"
+                    />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -126,7 +150,18 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img src="./images/gallery-3.jpeg" alt="Логотип ресторану Seafood" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-3.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img
+                      src="./images/gallery-3-mob.jpeg"
+                      alt="Логотип ресторану Seafood"
+                      width="450"
+                    />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -144,7 +179,14 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img src="./images/gallery-4.jpeg" alt="Наушники" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-4.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img src="./images/gallery-4-mob.jpeg" alt="Наушники" width="450" />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -162,7 +204,14 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img src="./images/gallery-5.jpeg" alt="Коробки" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-5.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img src="./images/gallery-5-mob.jpeg" alt="Коробки" width="450" />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -180,7 +229,14 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img src="./images/gallery-6.jpeg" alt="Увімкнений монітор" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-6.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img src="./images/gallery-6-mob.jpeg" alt="Увімкнений монітор" width="450" />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -198,7 +254,14 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img src="./images/gallery-7.jpeg" alt="Газета з фото" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-7.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img src="./images/gallery-7-mob.jpeg" alt="Газета з фото" width="450" />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -216,7 +279,14 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img src="./images/gallery-8.jpeg" alt="Етикетка з літерами" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-8.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img src="./images/gallery-8-mob.jpeg" alt="Етикетка з літерами" width="450" />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -234,7 +304,18 @@
             <li class="card">
               <a href="#" class="card__link">
                 <div class="card__wrapper">
-                  <img src="./images/gallery-9.jpeg" alt="Людина працює за ноутбуком" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/gallery-9.jpeg"
+                      media="(min-width: 768px)"
+                      width="370"
+                    />
+                    <img
+                      src="./images/gallery-9-mob.jpeg"
+                      alt="Людина працює за ноутбуком"
+                      width="450"
+                    />
+                  </picture>
                   <div class="card__popup">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -338,5 +419,55 @@
         </div>
       </div>
     </footer>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="container mobile-menu__container">
+        <button type="button" class="mobile-menu__close-button js-close-menu">
+          <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul>
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__item">
+            <a href="tel:+380961111111" class="mobile-menu__phone">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__email">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a href="" class="mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

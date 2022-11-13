@@ -551,7 +551,7 @@
               </svg>
             </div>
             <label for="user-comment" class="callback-form__label">Коментар</label>
-            <div class="callback-form__wrapper">
+            <div class="callback-form__wrapper callback-form__wrapper--nomargin">
               <textarea
                 name="user-comment"
                 id="user-comment"
@@ -570,9 +570,11 @@
                 <svg class="terms__icon">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
-                Погоджуюся з розсилкою та приймаю
-                <a href="#" class="terms__link">Умови договору</a></label
-              >
+                <span
+                  >Погоджуюся з розсилкою та приймаю&nbsp
+                  <a href="#" class="terms__link">Умови договору</a></span
+                >
+              </label>
             </div>
             <button type="submit" class="callback-form__button button">Відправити</button>
           </form>

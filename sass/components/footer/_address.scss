@@ -6,8 +6,12 @@ address {
 .address__item {
   margin-bottom: 8px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 1200px) {
-    margin-top: 9px;
+    margin-bottom: 9px;
   }
 
   font-size: 14px;
