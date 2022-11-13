@@ -11,6 +11,13 @@
   border: none;
   background-color: transparent;
 
+  fill: $primaryColor;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -25,6 +32,10 @@
   height: 100%;
   background-color: $primaryWhiteColor;
 
+  overflow-y: scroll;
+
+  box-shadow: 0px 1px 3px $boxshadow6, 0px 2px 4px $boxshadow4, 0px 4px 8px $boxshadow8;
+
   transition: transform 250ms $cubic;
 
   &.is-open {
@@ -34,6 +45,7 @@
 
 .mobile-menu__container {
   position: relative;
+  padding: 48px 40px;
 }
 
 .mobile-menu__close-button {
@@ -45,4 +57,106 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  fill: $primaryColor;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+}
+
+.mobile-menu__link {
+  color: $primaryColor;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &--current {
+    color: $accentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.mobile-menu__item {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__nav {
+  margin-bottom: 302px;
+}
+
+.mobile-menu__phone {
+  color: $accentColor;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    fill: $secondaryColor;
+  }
+}
+
+.mobile-menu__email {
+  color: $secondaryColor;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+}
+
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.mobile-menu__social-link {
+  color: $accentColor;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    fill: $secondaryColor;
+  }
+}
+
+.mobile-menu__social-item {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $modalBorderColor;
+    width: 1px;
+    height: 22px;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
 }

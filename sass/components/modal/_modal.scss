@@ -8,6 +8,14 @@
   z-index: 1;
   opacity: 1;
   transition: opacity 250ms $cubic, visibility 250ms $cubic;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 93px;
+
+  @media screen and (min-width: 767px) {
+    padding: 0;
+  }
 }
 
 .is-hidden {
@@ -17,20 +25,46 @@
 }
 
 .modal {
-  position: absolute;
   padding: 40px;
-  left: 50%;
-  top: 50%;
-  width: 528px;
-  height: 581px;
   background-color: $primaryWhiteColor;
   box-shadow: 0px 2px 1px $boxshadow1, 0px 1px 1px $boxshadow2, 0px 1px 3px $boxshadow3;
   border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
   transition: transform 250ms $cubic;
 
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+  }
+
   .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: scale(1.2);
+
+    @media screen and (min-width: 480px) {
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
