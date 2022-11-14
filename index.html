@@ -136,7 +136,16 @@
           <ul class="works">
             <li class="works__item">
               <a href="#">
-                <img src="./images/section3-1.jpeg" alt="Робота за комп'ютером" width="370px" />
+                <img
+                  srcset="
+                    ./images/work-1@370.jpeg   370w,
+                    ./images/work-1@740.jpeg   740w,
+                    ./images/work-1@1110.jpeg 1110w
+                  "
+                  src="./images/work-1@370.jpeg"
+                  alt="Робота за комп'ютером"
+                  sizes="(min-width: 1600px) 25vw, 30vw"
+                />
                 <div class="works__box">
                   <p class="works__title">Десктопні додатки</p>
                 </div>
@@ -145,9 +154,14 @@
             <li class="works__item">
               <a href="#">
                 <img
-                  src="./images/section3-2.jpeg"
+                  srcset="
+                    ./images/work-2@370.jpeg   370w,
+                    ./images/work-2@740.jpeg   740w,
+                    ./images/work-2@1110.jpeg 1110w
+                  "
+                  src="./images/work-2@370.jpeg"
                   alt="Жінка за комп'ютером із телефоном в руці"
-                  width="370px"
+                  sizes="(min-width: 1600px) 25vw, 30vw"
                 />
                 <div class="works__box">
                   <p class="works__title">Мобільні додатки</p>
@@ -156,7 +170,16 @@
             </li>
             <li class="works__item">
               <a href="#">
-                <img src="./images/section3-3.jpeg" alt="Робота на планшеті" width="370px" />
+                <img
+                  srcset="
+                    ./images/work-3@370.jpeg   370w,
+                    ./images/work-3@740.jpeg   740w,
+                    ./images/work-3@1110.jpeg 1110w
+                  "
+                  src="./images/work-3@370.jpeg"
+                  alt="Робота на планшеті"
+                  sizes="(min-width: 1600px) 25vw, 30vw"
+                />
                 <div class="works__box">
                   <p class="works__title">Дизайнерські рішення</p>
                 </div>
@@ -173,8 +196,22 @@
           <ul class="team">
             <li class="team__item">
               <picture>
-                <source srcset="./images/team-1.jpeg" media="(min-width: 768px)" />
-                <img src="./images/team-1-mob.jpeg" alt="Чоловік в окулярах, який посміхається" />
+                <source
+                  srcset="./images/team-1@270.jpeg 270w, ./images/team-1@540.jpeg 540w"
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="./images/team-1-tab@354.jpeg 354w, ./images/team-1-tab@708.jpeg 708w"
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <img
+                  srcset="./images/team-1-mob@450.jpeg 450w, ./images/team-1-mob@900.jpeg 900w"
+                  src="./images/team-1-mob@450.jpeg"
+                  alt="Чоловік в окулярах, який посміхається"
+                  sizes="450px"
+                />
               </picture>
               <div class="team__container">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -213,8 +250,22 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/team-2.jpeg" media="(min-width: 768px)" />
-                <img src="./images/team-2-mob.jpeg" alt="Жінка в окулярах, яка посміхається" />
+                <source
+                  srcset="./images/team-2@270.jpeg 270w, ./images/team-2@540.jpeg 540w"
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="./images/team-2-tab@354.jpeg 354w, ./images/team-2-tab@708.jpeg 708w"
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <img
+                  srcset="./images/team-2-mob@450.jpeg 450w, ./images/team-2-mob@900.jpeg 900w"
+                  src="./images/team-2-mob@450.jpeg"
+                  alt="Жінка в окулярах, яка посміхається"
+                  sizes="450px"
+                />
               </picture>
               <div class="team__container">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -253,9 +304,24 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/team-3.jpeg" media="(min-width: 768px)" />
-                <img src="./images/team-3-mob.jpeg" alt="Чоловік, який посміхається" />
+                <source
+                  srcset="./images/team-3@270.jpeg 270w, ./images/team-3@540.jpeg 540w"
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="./images/team-3-tab@354.jpeg 354w, ./images/team-3-tab@708.jpeg 708w"
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <img
+                  srcset="./images/team-3-mob@450.jpeg 450w, ./images/team-3-mob@900.jpeg 900w"
+                  src="./images/team-3-mob@450.jpeg"
+                  alt="Чоловік, який посміхається"
+                  sizes="450px"
+                />
               </picture>
+
               <div class="team__container">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__description">Marketing</p>
@@ -293,9 +359,24 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/team-4.jpeg" media="(min-width: 768px)" />
-                <img src="./images/team-4-mob.jpeg" alt="Чоловік в окулярах, який підморгує" />
+                <source
+                  srcset="./images/team-4@270.jpeg 270w, ./images/team-4@540.jpeg 540w"
+                  media="(min-width: 1200px)"
+                  sizes="270px"
+                />
+                <source
+                  srcset="./images/team-4-tab@354.jpeg 354w, ./images/team-4-tab@708.jpeg 708w"
+                  media="(min-width: 768px)"
+                  sizes="354px"
+                />
+                <img
+                  srcset="./images/team-4-mob@450.jpeg 450w, ./images/team-4-mob@900.jpeg 900w"
+                  src="./images/team-4-mob@450.jpeg"
+                  alt="Чоловік в окулярах, який підморгує"
+                  sizes="450px"
+                />
               </picture>
+
               <div class="team__container">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__description">UI Designer</p>
