@@ -206,11 +206,14 @@
                   media="(min-width: 768px)"
                   sizes="354px"
                 />
-                <img
+                <source
                   srcset="./images/team-1-mob@450.jpeg 450w, ./images/team-1-mob@900.jpeg 900w"
+                  media="(max-width: 767px)"
+                  sizes="450px"
+                />
+                <img
                   src="./images/team-1-mob@450.jpeg"
                   alt="Чоловік в окулярах, який посміхається"
-                  sizes="450px"
                 />
               </picture>
               <div class="team__container">
@@ -260,12 +263,12 @@
                   media="(min-width: 768px)"
                   sizes="354px"
                 />
-                <img
+                <source
                   srcset="./images/team-2-mob@450.jpeg 450w, ./images/team-2-mob@900.jpeg 900w"
-                  src="./images/team-2-mob@450.jpeg"
-                  alt="Жінка в окулярах, яка посміхається"
+                  media="(max-width: 767px)"
                   sizes="450px"
                 />
+                <img src="./images/team-2-mob@450.jpeg" alt="Жінка в окулярах, яка посміхається" />
               </picture>
               <div class="team__container">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -314,12 +317,12 @@
                   media="(min-width: 768px)"
                   sizes="354px"
                 />
-                <img
+                <source
                   srcset="./images/team-3-mob@450.jpeg 450w, ./images/team-3-mob@900.jpeg 900w"
-                  src="./images/team-3-mob@450.jpeg"
-                  alt="Чоловік, який посміхається"
+                  media="(max-width: 767px)"
                   sizes="450px"
                 />
+                <img src="./images/team-3-mob@450.jpeg" alt="Чоловік, який посміхається" />
               </picture>
 
               <div class="team__container">
@@ -369,12 +372,12 @@
                   media="(min-width: 768px)"
                   sizes="354px"
                 />
-                <img
+                <source
                   srcset="./images/team-4-mob@450.jpeg 450w, ./images/team-4-mob@900.jpeg 900w"
-                  src="./images/team-4-mob@450.jpeg"
-                  alt="Чоловік в окулярах, який підморгує"
+                  media="(max-width: 767px)"
                   sizes="450px"
                 />
+                <img src="./images/team-4-mob@450.jpeg" alt="Чоловік в окулярах, який підморгує" />
               </picture>
 
               <div class="team__container">
@@ -624,9 +627,14 @@
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-            <label for="user-email" class="callback-form__label">Пошта</label>
+            <label for="users-email" class="callback-form__label">Пошта</label>
             <div class="callback-form__wrapper">
-              <input type="email" id="user-email" name="user-email" class="callback-form__input" />
+              <input
+                type="email"
+                id="users-email"
+                name="users-email"
+                class="callback-form__input"
+              />
               <svg class="callback-form__icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -652,7 +660,7 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
                 <span
-                  >Погоджуюся з розсилкою та приймаю&nbsp
+                  >Погоджуюся з розсилкою та приймаю&nbsp;
                   <a href="#" class="terms__link">Умови договору</a></span
                 >
               </label>

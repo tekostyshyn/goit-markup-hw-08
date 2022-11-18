@@ -4,17 +4,12 @@
 
 .header__container {
   display: flex;
-
-  @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 23px;
-    align-items: center;
-    justify-content: space-between;
-  }
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
 
   @media screen and (min-width: 768px) {
-    align-items: center;
+    height: 80px;
   }
 }
 
