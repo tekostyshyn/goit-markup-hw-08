@@ -1,1 +1,1 @@
-# goit-markup-hw-08
+# This is a multipage website for Web Studio
